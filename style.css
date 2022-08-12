@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 414px;
+    background-color: #E5E5E5;
+}
+.topo {
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    padding-left: 21px;
+}
+.topo h1 {
+    padding-top: 5px;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.topo p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+.container-food, .container-drink{
+    display: flex;
+    flex-direction: row;
+}
+.title-food h1, .title-drink h1{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    padding-left: 21px;
+}
+.food, .drink {
+    width: 100%;
+    padding-left: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+.prato, .drink {
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    display: block;
+    padding-left: 14px;
+    padding-top: 18px;
+    border-radius: 9px;
+}
+.prato img, .bebida img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+.prato h4, .bebida h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.prato p, .bebida p {
+    margin: 2px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+.prato :nth-child(5) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.bebida :nth-child(5) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
