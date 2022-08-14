@@ -3,24 +3,30 @@
 * {
     box-sizing: border-box;
 }
+body, html {
+    width: 100%;
+    margin: 0;
+}
+
 .container {
     width: 414px;
     background-color: #E5E5E5;
 }
 .topo {
+    position: fixed;
     background-color: #CF2B2B;
     width: 414px;
     height: 92px;
     padding-left: 21px;
 }
 .topo h1 {
-    padding-top: 5px;
     font-family: 'Righteous', sans-serif;
     font-weight: 400;
     font-size: 44px;
     letter-spacing: -0.012em;
     color: #FFFFFF;
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 5px;
 }
 .topo p {
     font-family: 'Roboto', sans-serif;
@@ -28,24 +34,30 @@
     font-size: 18px;
     line-height: 21.09px;
     color: #FFFFFF;
-    margin-top: 0;
+    margin: 0;
 }
-.container-food, .container-drink{
+.container-food {
+    margin-top: 92px;
+}
+.container-food, .container-drink, .container-dessert{
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
+    overflow: scroll;
 }
-.title-food h1, .title-drink h1{
+
+.title-food h1, .title-drink h1, .title-dessert h1{
     font-family: 'Righteous', sans-serif;
     font-weight: 400;
     font-size: 26px;
     padding-left: 21px;
 }
-.food, .drink {
+.food, .drink, .dessert{
     width: 100%;
     padding-left: 19px;
     font-family: 'Roboto', sans-serif;
 }
-.prato, .drink {
+.prato, .bebida, .sobremesa {
     width: 172px;
     height: 216px;
     background-color: #FFFFFF;
@@ -54,19 +66,22 @@
     padding-top: 18px;
     border-radius: 9px;
 }
-.prato img, .bebida img{
+.prato img, .bebida img, .sobremesa img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
 }
-.prato h4, .bebida h4 {
+.prato h4, .bebida h4, .sobremesa h4 {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.prato p, .bebida p {
-    margin: 2px;
+.prato p {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.prato p, .bebida p, .sobremesa p {
     font-size: 15px;
     font-weight: 300;
     color: #A6A6A6;
@@ -80,4 +95,56 @@
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+}
+.bebida :nth-child(4) {
+    color: #000000;
+}
+.dessert :nth-child(4) {
+    color: #000000;
+}
+.sobremesa :nth-child(5) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.dessert {
+    margin-bottom: 10px;
+}
+.container-food::-webkit-scrollbar {
+    display: none;
+
+}
+.container-drink::-webkit-scrollbar {
+    display: none;
+
+}
+.container-dessert::-webkit-scrollbar {
+    display: none;
+
+}
+.container-button {
+    background-color: #FFFFFF;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+button {
+    background-color: #CBCBCB;
+    align-items: center;
+    width: 362px;
+    height: 62px;
+    border-radius: 50px;
+    border: none;
+
+}
+button {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+
 }
