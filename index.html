@@ -1,330 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 03 - DrivenEats</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
       <div class="top">
-        <p class="title">DrivenEats</p>
-        <p class="subtitle">Sua comida pronta em 6 minutos</p>
+          <p class="title">DrivenEats</p>
+          <p class="subtitle">Sua comida pronta em 6 minutos</p>
       </div>
 
       <div class="content">
-        <p class="food-title">Primeiro, seu prato</p>
-
-        <div class="container-food">
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="prato"
-              value="19.90"
-              onclick="calculo();"
-            />
-            <div class="prato">
-              <img src="assets/pizza.jpg" />
-              <div class="food">
-                <p class="name-food">Pizza</p>
-                <p class="info-food">Mozzarela pizza</p>
-                <p class="price">R$ 19,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
+          <p class="food-title">Primeiro, seu prato</p>
+        
+          <div class="container-food">
+            <label class="card">
+          
+                <input type="radio" class="radio" name="prato" value="19.90" onclick="calculo();">
+                <div class="prato" >
+                  <img src="assets/pizza.jpg">
+                  <div class="food">
+                    <p class="name-food">Pizza</p>
+                    <p class="info-food">Mozzarela pizza</p>
+                    <p class="price">R$ 19,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                </div>
               </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="prato"
-              value="14.90"
-              onclick="calculo();"
-            />
-            <div class="prato">
-              <img src="assets/avocado-toast.jpg" />
-              <div class="food">
-                <p class="name-food">Avocado Toast</p>
-                <p class="info-food">Toasted bread with avocado paste</p>
-                <p class="price">R$ 14,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="prato"
-              value="9.90"
-              onclick="calculo();"
-            />
-            <div class="prato">
-              <img src="assets/burrito.jpg" />
-              <div class="food">
-                <p class="name-food">Burrito</p>
-                <p class="info-food">Mexican burrito with meat</p>
-                <p class="price">R$ 9,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="prato"
-              value="15.90"
-              onclick="calculo();"
-            />
-            <div class="prato">
-              <img src="assets/pancake.jpg" />
-              <div class="food">
-                <p class="name-food">Pancake</p>
-                <p class="info-food">Classic pancake with maple syrup</p>
-                <p class="price">R$ 15,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-        </div>
-        <p class="food-title">Agora, sua bebida</p>
-
-        <div class="bebidas">
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="bebida"
-              value="3.90"
-              onclick="calculo();"
-            />
-            <div class="bebida">
-              <img src="assets/coffee.jpg" />
-              <div class="drink">
-                <p class="name-drink">Coffee</p>
-                <p class="info-drink">Black coffee</p>
-                <p class="price">R$ 3,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="bebida"
-              value="12.90"
-              onclick="calculo();"
-            />
-            <div class="bebida">
-              <img src="assets/green-juice.jpg" />
-              <div class="drink">
-                <p class="name-drink">Detox juice</p>
-                <p class="info-drink">Green juice</p>
-                <p class="price">R$ 12,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="bebida"
-              value="14.90"
-              onclick="calculo();"
-            />
-            <div class="bebida">
-              <img src="assets/lemon-juice.jpg" />
-              <div class="drink">
-                <p class="name-drink">Lemon Juice</p>
-                <p class="info-drink">Lemon juice</p>
-                <p class="price">R$ 14,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="bebida"
-              value="17.90"
-              onclick="calculo();"
-            />
-            <div class="bebida">
-              <img src="assets/smothie.jpg" />
-              <div class="drink">
-                <p class="name-drink">Smothie</p>
-                <p class="info-drink">Strawberry smothie</p>
-                <p class="price">R$ 17,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-        </div>
-
+            </label>
+            <label class="card">
+                <input type="radio" class="radio" name="prato" value="14.90" onclick="calculo();" >
+                <div class="prato">
+                  <img src="assets/avocado-toast.jpg">
+                  <div class="food">
+                    <p class="name-food">Avocado Toast</p>
+                    <p class="info-food">Toasted bread with avocado paste</p>
+                    <p class="price">R$ 14,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+                </div>
+            </label>
+            <label class="card">
+                <input type="radio" class="radio" name="prato" value="9.90" onclick="calculo();" >
+                <div class="prato">
+                  <img src="assets/burrito.jpg">
+                  <div class="food">
+                    <p class="name-food">Burrito</p>
+                    <p class="info-food">Mexican burrito with meat</p>
+                    <p class="price">R$ 9,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+                </div>
+              
+            </label>
+            <label class="card">
+                <input type="radio" class="radio"  name="prato" value="15.90" onclick="calculo();">
+                <div class="prato">
+                  <img src="assets/pancake.jpg">
+                  <div class="food">
+                    <p class="name-food">Pancake</p>
+                    <p class="info-food">Classic pancake with maple syrup</p>
+                    <p class="price">R$ 15,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+              </label>
+          </div>
+          <p class="food-title">Agora, sua bebida</p>
+          
+          <div class="bebidas">
+            <label class="card">
+                <input type="radio" class="radio" name="bebida" value="3.90" onclick="calculo();">
+                <div class="bebida">
+                  <img src="assets/coffee.jpg">
+                  <div class="drink">
+                    <p class="name-drink">Coffee</p>
+                    <p class="info-drink">Black coffee</p>
+                    <p class="price">R$ 3,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+            <label class="card">
+                <input type="radio" class="radio" name="bebida" value="12.90" onclick="calculo();">
+                <div class="bebida">
+                  <img src="assets/green-juice.jpg">
+                  <div class="drink">
+                    <p class="name-drink">Detox juice</p>
+                    <p class="info-drink">Green juice</p>
+                    <p class="price">R$ 12,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+            <label class="card">
+                <input type="radio" class="radio" name="bebida" value="14.90" onclick="calculo();">
+                <div class="bebida">
+                  <img src="assets/lemon-juice.jpg">
+                  <div class="drink">
+                    <p class="name-drink">Lemon Juice</p>
+                    <p class="info-drink">Lemon juice</p>
+                    <p class="price">R$ 14,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+            <label class="card">
+                <input type="radio" class="radio" name="bebida" value="17.90" onclick="calculo();">
+                <div class="bebida">
+                  <img src="assets/smothie.jpg">
+                  <div class="drink">
+                    <p class="name-drink">Smothie</p>
+                    <p class="info-drink">Strawberry smothie</p>
+                    <p class="price">R$ 17,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+          </div>
+          
         <p class="dessert-title">Por fim, sua sobremesa</p>
 
-        <div class="sobremesas">
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="sobremesa"
-              value="16.90"
-              onclick="calculo();"
-            />
-            <div class="sobremesa">
-              <img src="assets/brownie.jpg" />
-              <div class="dessert">
-                <p class="name-dessert">Chocolate brownie</p>
-                <p class="info-dessert">Soft brownie whith chocolate</p>
-                <p class="price">R$ 16,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="sobremesa"
-              value="12.50"
-              onclick="calculo();"
-            />
-            <div class="sobremesa">
-              <img src="assets/chocolate-mousse.jpg" />
-              <div class="dessert">
-                <p class="name-dessert">Chocolate mousse</p>
-                <p class="info-dessert">Chocolate mousse</p>
-                <p class="price">R$ 12,50</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="sobremesa"
-              value="9.50"
-              onclick="calculo();"
-            />
-            <div class="sobremesa">
-              <img src="assets/cupcake.jpg" />
-              <div class="dessert">
-                <p class="name-dessert">Cupcake</p>
-                <p class="info-dessert">Cupcake</p>
-                <p class="price">R$9,50</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-          <label class="card">
-            <input
-              type="radio"
-              class="radio"
-              name="sobremesa"
-              value="8.90"
-              onclick="calculo();"
-            />
-            <div class="sobremesa">
-              <img src="assets/macaron.jpg" />
-              <div class="dessert">
-                <p class="name-dessert">Macaron</p>
-                <p class="info-dessert">Macaron</p>
-                <p class="price">R$ 8,90</p>
-                <ion-icon
-                  class="check"
-                  name="checkmark-circle-sharp"
-                ></ion-icon>
-              </div>
-            </div>
-          </label>
-        </div>
+          <div class="sobremesas">
+            <label class="card">
+                <input type="radio" class="radio" name="sobremesa" value="16.90" onclick="calculo();">
+                <div class="sobremesa">
+                  <img src="assets/brownie.jpg">
+                  <div class="dessert">
+                    <p class="name-dessert">Chocolate brownie</p>
+                    <p class="info-dessert">Soft brownie whith chocolate</p>
+                    <p class="price">R$ 16,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+            <label class="card">
+                <input type="radio" class="radio"  name="sobremesa" value="12.50" onclick="calculo();">
+                <div class="sobremesa">
+                  <img src="assets/chocolate-mousse.jpg">
+                  <div class="dessert">
+                    <p class="name-dessert">Chocolate mousse</p>
+                    <p class="info-dessert">Chocolate mousse</p>
+                    <p class="price">R$ 12,50</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+            <label class="card">
+                <input type="radio" class="radio"  name="sobremesa" value="9.50" onclick="calculo();">
+                <div class="sobremesa">
+                  <img src="assets/cupcake.jpg">
+                  <div class="dessert">
+                    <p class="name-dessert">Cupcake</p>
+                    <p class="info-dessert">Cupcake</p>
+                    <p class="price">R$9,50</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+            <label class="card">
+                <input type="radio" class="radio"  name="sobremesa" value="8.90" onclick="calculo();">
+                <div class="sobremesa">
+                  <img src="assets/macaron.jpg">
+                  <div class="dessert">
+                    <p class="name-dessert">Macaron</p>
+                    <p class="info-dessert">Macaron</p>
+                    <p class="price">R$ 8,90</p>
+                    <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                  </div>
+                </div>
+            </label>
+          </div>
 
         <div class="button">
           <div class="text" onclick="order();">
-            <p class="descricao">Selecione os 3 itens para fechar o pedido</p>
+              <p class="descricao">Selecione os 3 itens
+                para fechar o pedido</p>
           </div>
         </div>
-      </div>
     </div>
+  </div>
     <div class="confirm gone">
       <div class="itens">
-        <p class="confirm-text">Confirme seu pedido</p>
-        <div class="item1">
-          <p class="flango">Frango Yin Yang</p>
+        <p class="aviso">Confirme seu pedido</p>
+        <div class="item-food">
+          <p>Frango Yin Yang</p>
           <p>14,90</p>
         </div>
-        <div class="nome-preco-dois preco">
-          <p class="coca">Coquinha gelada</p>
+        <div class="item-drink">
+          <p>Coquinha gelada</p>
           <p>7,90</p>
         </div>
-        <div class="nome-preco-tres preco">
-          <p class="pudim">Pudim</p>
+        <div class="item-dessert">
+          <p>Pudim</p>
           <p>15,90</p>
         </div>
-        <div class="total nome-preco-tres aviso">
+        <div class="aviso">
           <p>TOTAL</p>
           <p>R$ 60,90</p>
+          <br>
         </div>
       </div>
-      <div class="confirm aviso" onclick="message();">
+      <div class="confirmar aviso" onclick="message();">
         <p>Tudo certo, pode pedir!</p>
       </div>
-      <div class="cancelar confirm">
-        <p onclick="cancel()" ;>Cancelar</p>
+      <div class="cancelar confirmar">
+        <p onclick="cancel()";>Cancelar</p>
       </div>
     </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

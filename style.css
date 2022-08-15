@@ -64,6 +64,7 @@ body{
 .card{
   position: relative;
   margin-right: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.168);
 }
 .card:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
@@ -198,7 +199,7 @@ body{
   width: 60%;
 }
 .confirm{
-  width: calc(100vw - 41px);
+  width: 350px;
   max-width: 950px;
   background-color: #50D074;
   border-radius: 9px;
@@ -208,7 +209,7 @@ body{
   margin: 5% auto;
   bottom: 135px;
 }
-.confirm-text{
+.aviso{
   margin-top: 25px;
   text-align: center;
   font-size: 22px;
@@ -218,7 +219,7 @@ body{
   color: #FFFFFF;
 }
 
-.confirm{
+.confirmar{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,21 +257,11 @@ body{
 }
 .itens{
   padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 
 .element{
   opacity: 0.5;
-}
-
-@media (min-width: 600px){
-  .nome-preco-um, .nome-preco-dois, .nome-preco-tres {
-    width: 94%;
-  }
-}
-
-@media (min-width: 770px){
-  .nome-preco-um, .nome-preco-dois, .nome-preco-tres {
-    width: 96%;
-  }
 }
